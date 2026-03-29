@@ -1,0 +1,24 @@
+# BookStore Microservices — Shared Dependencies
+# All services use FastAPI + Motor (async MongoDB driver)
+# Service-specific deps are included but only imported where needed
+
+# ── Web framework ──────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.10.0
+
+# ── MongoDB (async driver) ─────────────────────────────────────
+motor>=3.6.0
+
+# ── Redis (async) ──────────────────────────────────────────────
+redis>=5.2.0
+
+# ── OpenSearch ─────────────────────────────────────────────────
+opensearch-py>=2.8.0
+
+# ── Neo4j (async) ──────────────────────────────────────────────
+neo4j>=5.27.0
+
+# ── Performance ────────────────────────────────────────────────
+uvloop>=0.21.0
+httptools>=0.6.0
